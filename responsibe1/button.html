@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button</title>
+  </head>
+  <body>
+    <style>
+      .sub-but {
+        background-color: rgb(224, 9, 9);
+        border: none;
+
+        color: white;
+        border-radius: 2px;
+        height: 36px;
+        width: 75px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+      }
+      .sub-but:hover {
+        opacity: 0.7;
+      }
+      .sub-but:active {
+        opacity: 0.4;
+      }
+      .join-but {
+        height: 36px;
+        width: 50px;
+        border-radius: 3px;
+        border-width: 1px;
+        border-color: rgb(18, 92, 228);
+        background-color: white;
+        color: rgb(18, 92, 228);
+        cursor: pointer;
+        border-style: solid;
+        transition: backgroud-color .15s,color .15s;
+
+    
+      }
+      .join-but:hover {
+        background-color: rgb(18, 92, 228);
+
+        color: white;
+      }
+      .join-but:active {
+        opacity: 0.5;
+      }
+
+      .twet-but {
+        background-color: rgb(18, 92, 228);
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        width: 75px;
+        border: none;
+        border-radius: 18px;
+        height: 36px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow .15s;
+      }
+      .twet-but:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+      }
+      .twet-but:active{
+        opacity: .8;
+      }
+
+      .req-but {
+        color: white;
+        background-color: black;
+        border-color: white;
+        border-width: 7px;
+        border-style: solid;
+        cursor: pointer;
+        font-size: 15px;
+        width: 155px;
+        height: 50px;
+      }
+      .add-but {
+        height: 37px;
+        width: 155px;
+        border-radius: 70px;
+        color: black;
+        background-color: yellow;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .si-but {
+        height: 36px;
+        width: 70px;
+        background-color: rgb(9, 139, 9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+
+    <button class="sub-but">Subscribe</button>
+    <button class="join-but">join</button>
+    <button class="twet-but">Tweet</button>
+    <br /><br /><br />
+    <button class="req-but">Request now</button>
+    <button class="add-but">Add to cart</button>
+    <button class="si-but">Sing up</button>
+  </body>
+</html>
