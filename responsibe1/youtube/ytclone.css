@@ -1,0 +1,14 @@
+.image{
+    width: 300px;
+    display: inline-block;
+}
+#text{
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.ceo,
+.mar,
+.tar{
+    width: 300px;
+}
