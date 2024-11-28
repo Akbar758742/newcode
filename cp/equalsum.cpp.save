@@ -1,0 +1,47 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int countWays(vector<vector<int>>& matrix, int row, vector<int>& columnSums) {
+    int n = matrix.size();
+
+    
+    if (row == n) {
+        return (columnSums[0] == columnSums[1] && columnSums[1] == columnSums[2]) ? 1 : 0;
+    }
+
+    int ways = 0;
+
+    // Try converting each element in the current row to 0
+    for (int col = 0; col < 3; ++col) {
+        int originalValue = matrix[row][col];
+        columnSums[col] -= originalValue;  // Remove this value from the column sum
+
+        ways += countWays(matrix, row + 1, columnSums);
+
+        columnSums[col] += originalValue;  // Backtrack to restore the column sum
+    }
+
+    return ways;
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<vector<int>> matrix(n, vector<int>(3));
+    vector<int> columnSums(3, 0);
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cin >> matrix[i][j];
+            columnSums[j] += matrix[i][j];
+        }
+    }
+
+    cout << countWays(matrix, 0, columnSums) << endl;
+
+    return 0;
+}
