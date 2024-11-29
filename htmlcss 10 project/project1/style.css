@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.container{
+    background-color: rgb(178, 178, 216);
+    min-height: 100vh;
+    border:10px solid rgb(100, 100, 209);
+}
+.content{
+    max-width: 1500px;
+  margin: 0 auto;
+}
+.img_container,img{
+    width: 300px;
+    height: 280px;
+    
+}
+.top_section{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
